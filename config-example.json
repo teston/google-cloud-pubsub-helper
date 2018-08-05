@@ -1,0 +1,7 @@
+{
+  "subscriptionName": "uploaded-videos-for-transcode-agent-dev",
+  "topicName": "transcode-workers-dev",
+  "logLevel": "debug",
+  "logFormat": "json",
+  "googleCredentialsPath": "/var/secrets/teston/google-credentials.json"
+}
