@@ -1,8 +1,11 @@
 #!/bin/bash
 
+WORKDRIR=/go/src/github.com/teston/google-cloud-pubsub-helper
+
 docker run \
     --rm \
     -it \
-    -v $(pwd):/go/src/github.com/teston/google-cloud-pubsub-helper \
-    library/golang
+    --workdir ${WORKDRIR} \
+    -v $(pwd):${WORKDRIR} \
+    golang:1.11
     bash
